@@ -8,6 +8,11 @@ use App\Http\Resources\CategoryResource;
 
 class CategoryController extends Controller
 {
+    public function fetch()
+    {
+       return view('category');
+    }
+
     public function index()
     {
        return CategoryResource::collection(

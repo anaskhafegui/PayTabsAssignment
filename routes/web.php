@@ -14,6 +14,9 @@ use App\Http\Controllers\CategoryController;
 |
 */
 
+Route::get('/selectcategory', [CategoryController::class, 'fetch']);
+
+
 Route::get('/category', [CategoryController::class, 'index']);
 
 
